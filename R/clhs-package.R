@@ -45,7 +45,7 @@
 #' @import Rcpp 
 #' @useDynLib clhs
 #' 
-NULL
+"_PACKAGE"
 
 #' Conditioned Latin Hypercube Sampling result
 #' 

@@ -34,7 +34,7 @@ Suggests: sp,
     rmarkdown,
     testthat
 VignetteBuilder: knitr
-RoxygenNote: 7.1.2
+RoxygenNote: 7.3.2
 Collate: 
     'RcppExports.R'
     'clhs-internal.R'

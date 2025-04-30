@@ -30,7 +30,7 @@
 #' 
 #' data(meuse.grid)
 #' coordinates(meuse.grid) = ~x+y
-#' proj4string(meuse.grid) <- CRS("+init=epsg:28992")
+#' proj4string(meuse.grid) <- CRS("EPSG:28992")
 #' gridded(meuse.grid) = TRUE
 #' ms <- stack(meuse.grid)
 #' 

@@ -16,7 +16,7 @@ test_that("clhs on a SpatialPointsDataFrame works", {
   spdf <- sp::SpatialPointsDataFrame(
     coords = df[, c("x", "y")],
     data = df[, c("a", "b", "c")],
-    proj4string = sp::CRS("+init=epsg:4326")
+    proj4string = sp::CRS("EPSG:4326")
   )
   
   res1 <- clhs(spdf, size = 5, iter = 100, progress = FALSE, simple = TRUE)

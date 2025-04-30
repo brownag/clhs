@@ -113,11 +113,11 @@ clhs.data.frame <- function(
     
     if(is.null(include)){
       dat <- data
-      inc <- dat[0,]
+      inc <- dat[0, , drop = FALSE] # keep as matrix if just one column
       ssize <- size
     } else{
       dat <- data[-include,]
-      inc <- data[include,,drop = FALSE] ##keep as matrix if just one row
+      inc <- data[include, , drop = FALSE] # keep as matrix if just one row
       ssize <- size - length(include)
       can.include <- 1:nrow(dat)
     }

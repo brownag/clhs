@@ -17,7 +17,7 @@ clhs.sf <- function(
     # When coords are used only points/multipoints are supported
     if (! st_geometry_type(x, by_geometry = FALSE) %in% c("POINT", "MULTIPOINT")) {
       stop(
-        "When use.coords` is set to TRUE, only POINT/MULTIPOINT geometries are supported.",
+        "When `use.coords` is set to TRUE, only POINT/MULTIPOINT geometries are supported.",
         call. = FALSE
       )
     }

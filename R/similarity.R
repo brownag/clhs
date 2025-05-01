@@ -24,7 +24,7 @@
 #' 
 #' @export
 #' 
-#' @examples 
+#' @examplesIf requireNamespace("sp") 
 #' library(raster)
 #' library(sp)
 #' 

@@ -2,6 +2,8 @@ context("clhs-sp")
 
 test_that("clhs on a SpatialPointsDataFrame works", {
   
+  skip_if_not_installed("sp")
+  
   suppressWarnings(RNGversion("3.5.0"))
   set.seed(1)
   

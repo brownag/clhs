@@ -30,7 +30,8 @@ LinkingTo: RcppArmadillo, Rcpp
 License: GPL (>= 2)
 Encoding: UTF-8
 LazyLoad: yes
-Suggests: sp,
+Suggests: terra,
+    sp,
     knitr,
     rmarkdown,
     testthat
@@ -46,5 +47,6 @@ Collate:
     'clhs.R'
     'clhs-sf.R'
     'clhs-sp.R'
+    'clhs-terra.R'
     'plot.R'
     'similarity.R'

@@ -10,7 +10,7 @@ Authors@R: c(
     person("Benjamin", "Louis", email = "contact@benjaminlouis-stat.fr", role = "ctb"),
     person("Kiri", "Daust", email = "Kiri.Daust@gov.bc.ca", role = "ctb"),
     person("David", "Clifford", email = "david.clifford@gmail.com", role = "ctb"),
-    person("Andrew", "Brown", email = "andrew.g.brown@usda.gov", role = "ctb"))
+    person("Andrew", "Brown", email = "andrew.g.brown@usda.gov", role = "ctb", comment = c(ORCID="0000-0002-4565-533X")))
 Maintainer: Pierre Roudier <roudierp@landcareresearch.co.nz>
 URL: https://github.com/pierreroudier/clhs/
 BugReports: https://github.com/pierreroudier/clhs/issues

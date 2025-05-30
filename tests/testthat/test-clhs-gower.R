@@ -1,7 +1,9 @@
 context("clhs-gower")
 
 test_that("Gower similarity works", {
-  
+ 
+  skip_if_not_installed("sp")
+   
   library(raster)
   library(sp)
 

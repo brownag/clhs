@@ -1,15 +1,16 @@
 Package: clhs
 Type: Package
 Title: Conditioned Latin Hypercube Sampling
-Version: 0.9.0
-Date: 2021-10-14
+Version: 0.9.1
+Date: 2025-05-29
 Authors@R: c(
     person("Pierre", "Roudier", email = "roudierp@landcareresearch.co.nz", role = c("aut", "cre")),
     person("Colby", "Brugnard", email = "cbrung@ad.nmsu.edu", role = "ctb"),
     person("Dylan", "Beaudette", email = "dylan.beaudette@ca.usda.gov", role = "ctb"),
     person("Benjamin", "Louis", email = "contact@benjaminlouis-stat.fr", role = "ctb"),
     person("Kiri", "Daust", email = "Kiri.Daust@gov.bc.ca", role = "ctb"),
-    person("David", "Clifford", email = "david.clifford@gmail.com", role = "ctb"))
+    person("David", "Clifford", email = "david.clifford@gmail.com", role = "ctb"),
+    person("Andrew", "Brown", email = "andrew.g.brown@usda.gov", role = "ctb", comment = c(ORCID="0000-0002-4565-533X")))
 Maintainer: Pierre Roudier <roudierp@landcareresearch.co.nz>
 URL: https://github.com/pierreroudier/clhs/
 BugReports: https://github.com/pierreroudier/clhs/issues
@@ -19,7 +20,6 @@ Imports: utils,
     methods, 
     grid, 
     ggplot2, 
-    sp,
     sf,
     raster, 
     reshape2, 
@@ -30,11 +30,12 @@ LinkingTo: RcppArmadillo, Rcpp
 License: GPL (>= 2)
 Encoding: UTF-8
 LazyLoad: yes
-Suggests: knitr,
+Suggests: sp,
+    knitr,
     rmarkdown,
     testthat
 VignetteBuilder: knitr
-RoxygenNote: 7.1.2
+RoxygenNote: 7.3.2
 Collate: 
     'RcppExports.R'
     'clhs-internal.R'

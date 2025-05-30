@@ -1,4 +1,4 @@
-[![R build status](https://github.com/pierreroudier/clhs/workflows/R-CMD-check/badge.svg)](https://github.com/pierreroudier/clhs/actions)
+[![R-CMD-check](https://github.com/pierreroudier/clhs/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/pierreroudier/clhs/actions/workflows/R-CMD-check.yaml)
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/clhs)](https://cran.r-project.org/package=clhs)
 [![Total_Downloads](http://cranlogs.r-pkg.org/badges/grand-total/clhs)](https://cran.r-project.org/package=clhs)
 

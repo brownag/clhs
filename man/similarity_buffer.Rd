@@ -36,12 +36,13 @@ a RasterStack
 Calculates Gower's similarity index for every pixel within an given radius buffer of each sampling point
 }
 \examples{
+\dontshow{if (requireNamespace("sp") ) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
 library(raster)
 library(sp)
 
 data(meuse.grid)
 coordinates(meuse.grid) = ~x+y
-proj4string(meuse.grid) <- CRS("+init=epsg:28992")
+proj4string(meuse.grid) <- CRS("EPSG:28992")
 gridded(meuse.grid) = TRUE
 ms <- stack(meuse.grid)
 
@@ -50,7 +51,7 @@ set.seed(1)
 pts <- clhs(ms, size = 3, iter = 100, progress = FALSE, simple = FALSE)
 gw <- similarity_buffer(ms, pts$sampled_data, buffer = 500)
 plot(gw)
-
+\dontshow{\}) # examplesIf}
 }
 \references{
 Brungard, C. and Johanson, J. 2015. The gate's locked! I can't get to the exact 
